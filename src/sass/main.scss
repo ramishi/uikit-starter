@@ -1,12 +1,12 @@
 // Dark theme overrides
-// $AU-colordark-foreground-text:   #ffffff;
-// $AU-colordark-foreground-action: #f9f9f9;
-// $AU-colordark-foreground-focus:  #13e241;
-// $AU-colordark-background:        #134169;
+$AU-colordark-foreground-text:   #ffffff;
+$AU-colordark-foreground-action: #f9f9f9;
+$AU-colordark-foreground-focus:  #0059a4;
+$AU-colordark-background:        #002665;
 
 // Light theme overrides
-// $AU-color-foreground-action: #134169;
-// $AU-color-foreground-focus:  #0C8927;
+$AU-color-foreground-action: #0059a4;
+$AU-color-foreground-focus:  #ac1523;
 
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
@@ -27,7 +27,7 @@ body > .au-body {
 	@include AU-space( padding, 2unit 0 );
 
 	@include AU-media( sm ) {
-		@include AU-space( padding, 4unit 0 );
+		@include AU-space( padding, 2unit 0 );
 	}
 }
 
@@ -49,6 +49,8 @@ body > .au-body {
 			padding-top: 0;
 		}
 	}
+
+	background-image: url('../assets/img/westmead-artist.jpg');
 }
 
 
@@ -76,4 +78,15 @@ body > .au-body {
 // Increase spacing between list items in footer
 .au-footer .au-link-list li {
 	@include AU-space( padding-right, 1unit );
+}
+
+// Custom styles for the caption box
+.au-grid .col-sm-6.caption-box {
+	background-color: #fff;
+	@include AU-space( padding, 3unit, 0 );
+	@include AU-space( margin, 3unit 2unit, 0 );
+
+	p {
+		@include AU-fontgrid( lg );
+	}
 }

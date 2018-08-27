@@ -16,7 +16,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Australian Government Design System Starter Pack</title>
+	<title>NSW Government Starter Site</title>
 
 	<script type="text/javascript">
 		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
@@ -49,16 +49,18 @@
 	</nav>
 
 	<!-- HEADER -->
-	<header class="au-header au-header--dark" role="banner">
+	<header class="au-header au-header--light" role="banner">
 		<div class="container-fluid">
 		  <div class="row">
 			<div class="col-md-9">
 			  <a class="au-header__brand" href="#">
-				<img class="au-header__brand-image" alt="Insert alternate text here" src="./assets/img/header-logo-agov.png">
+				<!-- <img class="au-header__brand-image" alt="Insert alternate text here" src="./assets/img/header-logo-agov.png"> -->
+				<!-- <img class="au-header__brand-image" alt="Insert alternate text here" src="./assets/img/nsw-logo-desk.svg"> -->
+				<img class="au-header__brand-image" alt="Insert alternate text here" src="./assets/img/service-nsw.png">
 				<div class="au-header__text">
-				  <h1 class="au-header__heading">Example Site</h1>
+				  <h1 class="au-header__heading">Service NSW Sample Site</h1>
 				  <div class="au-header__subline">
-					An example of the system in use
+					An example site for NSW.gov.au
 				  </div>
 				</div>
 			  </a>
@@ -69,7 +71,7 @@
 	  </header>
 
 	  <!-- MAIN NAVIGATION -->
-	  <nav class="au-main-nav au-main-nav--dark">
+	  <nav class="au-main-nav">
 		  <div class="container-fluid">
 			  <div class="row">
 				  <div class="col-md-12">
@@ -89,12 +91,19 @@
 									  onClick="return AU.mainNav.Toggle( this )">
 									  Close
 								  </button>
-								  <ul class="au-link-list">
+								  <!-- <ul class="au-link-list">
 									  <li><a href="#">About</a></li>
 									  <li class="active"><a href="#">Responsibilities</a></li>
 									  <li><a href="#">Templates</a></li>
 									  <li><a href="#">Community</a></li>
 									  <li><a href="#">Support</a></li>
+								  </ul> -->
+								  <ul class="au-link-list">
+									<li><a href="#">About</a></li>
+									<li class="active"><a href="#">Services</a></li>
+									<li><a href="#">Gov directory</a></li>
+									<li><a href="#">Log in</a></li>
+									<li><a href="#">Sign up</a></li>
 								  </ul>
 								  <div class="au-main-nav__focus-trap-bottom"></div>
 							  </div>
@@ -108,21 +117,18 @@
   
 
 	<!-- BANNER -->
-	<div class="banner au-body au-body--alt">
+	<div class="banner au-body">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-6">
-					<h3>Understand user needs. Research to develop a deep knowledge of the users and their context for using the service.</h3>
+				<div class="col-sm-6 caption-box">
+					<p>The NSW Government has reformed the compulsory third party insurance scheme to reduce the costs of CTP Green slips for vehicle owners.</p>
 					<br/>
-					<button class="au-btn au-btn--secondary">
-						Examples
-					</button>
 					<button class="au-btn">
 						Get Started
 					</button>
 				</div>
 				<div class="col-sm-6">
-					<img class="au-responsive-media-img banner__image" src="http://placehold.it/900x300" alt="">
+					<!-- <img class="au-responsive-media-img banner__image" src="http://placehold.it/900x300" alt=""> -->
 				</div>
 			</div>
 		</div>
@@ -138,19 +144,16 @@
 							<a href="#">Home</a>
 						</li>
 						<li>
-							<a href="#">Responsibilities</a>
+							<a href="#">Services</a>
 						</li>
-						<li>
-							<a href="#">User needs</a>
-						</li>
-						<li>
-								<a href="#">Understand user needs</a>
-						</li>
-						<li>Community</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
+
+		<!-- <div class="row">
+			
+		</div> -->
 
 		<div class="row">
 			<!-- SIDE NAV -->
@@ -162,27 +165,39 @@
 					</a>
 					<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body" aria-hidden="true">
 						<h2 class="au-sidenav__title">
-							<a href="#">Responsibilities</a>
+							<a href="#">Services</a>
 						</h2>
 						<ul class="au-link-list">
 							<li>
-								<a href="#">Side-nav item level 1</a>
+								<a href="#">NSW Government services</a>
 							</li>
 							<li>
-								<a href="#">User Needs</a>
+								<a href="#">Pay, renew & replace</a>
 								<ul class="au-link-list">
 									<li>
-										<a href="#">Understand user needs</a>
+										<a href="#">Apply, order & book</a>
 										<ul class="au-link-list">
 											<li class="active">
-												<a href="#">Community</a>
+												<a href="#">Claim a CTP Green slip refund</a>
+											</li>
+											<li>
+												<a href="#">Apply for a birth certificate</a>
+											</li>
+											<li>
+												<a href="#">Apply for a NSW seniors card</a>
+											</li>
+											<li>
+												<a href="#">Book a licence test</a>
+											</li>
+											<li>
+												<a href="#">Apply for a marriage certificate</a>
+											</li>
+											<li>
+												<a href="#">Working with children check</a>
 											</li>
 										</ul>
 									</li>
 								</ul>
-							</li>
-							<li>
-								<a href="#">Side-nav item level 1</a>
 							</li>
 						</ul>
 					</div>
@@ -191,9 +206,8 @@
 			<div class="col-sm-8 col-md-8 col-md-offset-1">
 				<!-- MAIN BODY -->
 				<main id="content">
-					<h3>Community</h3>
-					<p>Together we'll be able to build products and services better, faster and easier</p>
-					<p>Join in the community today. This is a great chance for you to:</p>
+					<h3>Claim a CTP Green Slip refund</h3>
+					<p>If you were the registered owner of a private vehicle (excludes motorcycles) before December 2017, you may be eligible for a refund of part of your 2017 CTP Green Slip.</p>
 					<ul>
 						<li>collaborate on developing up great solutions to common design problems</li>
 						<li>share your hard work, insights and learnings with others</li>
