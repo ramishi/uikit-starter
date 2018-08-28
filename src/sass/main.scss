@@ -1,7 +1,7 @@
 // Dark theme overrides
 $AU-colordark-foreground-text:   #ffffff;
 $AU-colordark-foreground-action: #f9f9f9;
-$AU-colordark-foreground-focus:  #026540;
+$AU-colordark-foreground-focus:  red;
 $AU-colordark-background:        #002665;
 
 // Light theme overrides
@@ -13,6 +13,8 @@ $AU-colordark-background:        #026540;
 
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
+
+$AU-logo-width-sm: 10unit;
 
 // UI-Kit
 @import './_uikit.scss';
@@ -92,4 +94,17 @@ body > .au-body {
 	p {
 		@include AU-fontgrid( lg );
 	}
+}
+
+
+.au-header__text {
+	width: 500px;
+}
+
+.au-header__brand-image {
+	@include AU-space( margin-top, 1.25unit );
+}
+
+.au-header {
+	@include AU-space( padding, 2unit 0 0 );
 }
