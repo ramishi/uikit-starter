@@ -11,6 +11,9 @@ $AU-color-foreground-focus:  #ac1523;
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
 
+$AU-logo-width: 8unit;
+$AU-logo-width-sm: 10unit;
+
 // UI-Kit
 @import './_uikit.scss';
 
@@ -89,4 +92,12 @@ body > .au-body {
 	p {
 		@include AU-fontgrid( lg );
 	}
+}
+
+.au-header__brand-image {
+	margin-top: 10px;
+}
+
+.au-header {
+	@include AU-space( padding, 1.5unit 0 0 );
 }
