@@ -53,10 +53,6 @@ body > .au-body {
 			padding-top: 0;
 		}
 	}
-
-	&.au-body.au-body--alt {
-		background-color: $AU-colordark-foreground-focus;
-	}
 }
 
 
@@ -99,4 +95,12 @@ body > .au-body {
 
 .au-header__brand-image {
 	@include AU-space( padding, 0.75unit 0, 0 );
+}
+
+.au-header__text {
+	width: 500px;
+}
+
+.au-header {
+	@include AU-space( padding, 2unit 0 0 );
 }
