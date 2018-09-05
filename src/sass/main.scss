@@ -1,12 +1,12 @@
-// Dark theme overrides
-// $AU-colordark-foreground-text:   #ffffff;
-// $AU-colordark-foreground-action: #f9f9f9;
-// $AU-colordark-foreground-focus:  #13e241;
-// $AU-colordark-background:        #134169;
+//Dark theme overrides
+$AU-colordark-foreground-text:   #ffffff;
+$AU-colordark-foreground-action: #A4C8E1;
+$AU-colordark-foreground-focus:  #009CA6;
+$AU-colordark-background:        #041E42;
 
 // Light theme overrides
-// $AU-color-foreground-action: #134169;
-// $AU-color-foreground-focus:  #0C8927;
+$AU-color-foreground-action: #041E42;
+$AU-color-foreground-focus:  #9D2235;
 
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
@@ -76,4 +76,19 @@ body > .au-body {
 // Increase spacing between list items in footer
 .au-footer .au-link-list li {
 	@include AU-space( padding-right, 1unit );
+}
+
+.au-header__brand {
+	min-width: 33rem;
+}
+@media only screen and (max-width: 600px) {
+    .au-header__brand {
+		min-width: 20rem;
+	}
+}
+@media only screen and (min-width: 600px) {
+.au-header__brand .au-header__brand-image+.au-header__text {
+	margin-left:9rem;
+	padding-top: 2rem;
+}
 }
