@@ -9,7 +9,7 @@
 	<html class="no-js ie9" lang="en">
 <![endif]-->
 <!--[if !(IE)]><!-->
-	<html class="no-js" lang="en">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -19,7 +19,14 @@
 	<title>Australian Government Design System Starter Pack</title>
 
 	<script type="text/javascript">
-		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
+		var $html = document.documentElement;
+		if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js");
+		else {
+			var className = "no-js";
+			$html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"),
+				" "), $html.className += " js"
+		}
+
 	</script>
 
 	<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png">
@@ -40,6 +47,7 @@
 
 <!-- BODY -->
 <!-- GRID-12 -->
+
 <body class="au-grid">
 
 	<!-- SKIP-LINKS -->
@@ -51,69 +59,64 @@
 	<!-- HEADER -->
 	<header class="au-header au-header--dark" role="banner">
 		<div class="container-fluid">
-		  <div class="row">
-			<div class="col-md-9">
-			  <a class="au-header__brand" href="#">
-				<img class="au-header__brand-image" alt="Insert alternate text here " src="./assets/img/header-logo-nsw.png">
-				<div class="au-header__text">
-				  <h1 class="au-header__heading">Education</h1>
-				  <div class="au-header__subline">
-					DTA Design System with DoE colour
-				  </div>
+			<div class="row">
+				<div class="col-md-9">
+					<a class="au-header__brand" href="#">
+						<img class="au-header__brand-image" alt="Insert alternate text here " src="./assets/img/header-logo-nsw.png">
+						<div class="au-header__text">
+							<h1 class="au-header__heading">Education</h1>
+							<div class="au-header__subline">
+								DTA Design System with DoE colour
+							</div>
+						</div>
+					</a>
 				</div>
-			  </a>
+				<!-- <div class="col-md-3">Extras</div> -->
 			</div>
-			<!-- <div class="col-md-3">Extras</div> -->
-		  </div>
 		</div>
-	  </header>
+	</header>
 
-	  <!-- MAIN NAVIGATION -->
-	  <nav class="au-main-nav au-main-nav--dark">
-		  <div class="container-fluid">
-			  <div class="row">
-				  <div class="col-md-12">
-					  <div class="au-main-nav__content" id="main-nav-default-alt">
-						  <button
-							  aria-controls="main-nav-default-alt"
-							  class="au-main-nav__toggle au-main-nav__toggle--open"
-							  onClick="return AU.mainNav.Toggle( this )">
-							  Menu
-						  </button>
-						  <div class="au-main-nav__menu">
-							  <div class="au-main-nav__menu-inner">
-								  <div class="au-main-nav__focus-trap-top"></div>
-								  <button
-									  aria-controls="main-nav-default-alt"
-									  class="au-main-nav__toggle au-main-nav__toggle--close"
-									  onClick="return AU.mainNav.Toggle( this )">
-									  Close
-								  </button>
-								  <ul class="au-link-list">
-									  <li><a href="#">About</a></li>
-									  <li class="active"><a href="#">Responsibilities</a></li>
-									  <li><a href="#">Templates</a></li>
-									  <li><a href="#">Community</a></li>
-									  <li><a href="#">Support</a></li>
-								  </ul>
-								  <div class="au-main-nav__focus-trap-bottom"></div>
-							  </div>
-						  </div>
-						  <div class="au-main-nav__overlay" aria-controls="main-nav-default-alt" onClick="return AU.mainNav.Toggle( this )"></div>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </nav>
-  
+	<!-- MAIN NAVIGATION -->
+	<nav class="au-main-nav au-main-nav--dark">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="au-main-nav__content" id="main-nav-default-alt">
+						<button aria-controls="main-nav-default-alt" class="au-main-nav__toggle au-main-nav__toggle--open" onClick="return AU.mainNav.Toggle( this )">
+							Menu
+						</button>
+						<div class="au-main-nav__menu">
+							<div class="au-main-nav__menu-inner">
+								<div class="au-main-nav__focus-trap-top"></div>
+								<button aria-controls="main-nav-default-alt" class="au-main-nav__toggle au-main-nav__toggle--close" onClick="return AU.mainNav.Toggle( this )">
+									Close
+								</button>
+								<ul class="au-link-list">
+									<li><a href="#">About</a></li>
+									<li class="active"><a href="#">Responsibilities</a></li>
+									<li><a href="#">Templates</a></li>
+									<li><a href="#">Community</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+								<div class="au-main-nav__focus-trap-bottom"></div>
+							</div>
+						</div>
+						<div class="au-main-nav__overlay" aria-controls="main-nav-default-alt" onClick="return AU.mainNav.Toggle( this )"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
 
 	<!-- BANNER -->
 	<div class="banner au-body au-body--alt">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-6">
-					<h3>Understand user needs. Research to develop a deep knowledge of the users and their context for using the service.</h3>
-					<br/>
+					<h3>Understand user needs. Research to develop a deep knowledge of the users and their context for using the
+						service.</h3>
+					<br />
 					<button class="au-btn au-btn--secondary">
 						Examples
 					</button>
@@ -144,7 +147,7 @@
 							<a href="#">User needs</a>
 						</li>
 						<li>
-								<a href="#">Understand user needs</a>
+							<a href="#">Understand user needs</a>
 						</li>
 						<li>Community</li>
 					</ul>
@@ -156,8 +159,8 @@
 			<!-- SIDE NAV -->
 			<div class="col-sm-4 col-md-3">
 				<aside id="nav" class="au-side-nav au-accordion">
-					<a href="#nav-default" class="au-side-nav__toggle au-accordion__title au-accordion--closed" aria-controls="nav-default" aria-expanded="false"
-					 aria-selected="false" role="tab" onclick="return AU.accordion.Toggle( this )">
+					<a href="#nav-default" class="au-side-nav__toggle au-accordion__title au-accordion--closed" aria-controls="nav-default"
+					aria-expanded="false" aria-selected="false" role="tab" onclick="return AU.accordion.Toggle( this )">
 						In this section
 					</a>
 					<div id="nav-default" class="au-side-nav__content au-accordion--closed au-accordion__body" aria-hidden="true">
@@ -199,6 +202,56 @@
 						<li>share your hard work, insights and learnings with others</li>
 						<li>get help with your own design and development challenges</li>
 					</ul>
+					<h3>Checkbox</h3>
+					<label class="au-control-input">
+						<input class="au-control-input__input" type="checkbox" name="checkbox-ex">
+						<span class="au-control-input__text">Phone</span>
+					</label>
+					<label class="au-control-input">
+						<input class="au-control-input__input" type="checkbox" name="checkbox-ex" checked>
+						<span class="au-control-input__text">Tablet</span>
+					</label>
+					<h3>Radio</h3>
+					<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex">
+						<span class="au-control-input__text">Phone</span>
+					</label>
+					<label class="au-control-input">
+						<input class="au-control-input__input" type="radio" name="radio-ex" checked>
+						<span class="au-control-input__text">Phone</span>
+					</label>
+					<h3>Text Input</h3>
+					<!--
+  Light:  <input class="au-text-input au-text-input--block">
+  Dark:   <input class="au-text-input au-text-input--block au-text-input--dark">
+-->
+
+					<label for="text-input-block">label text</label>
+					<input class="au-text-input au-text-input--block" name="text-input-block" id="text-input-block" type="text" value="value">
+					<h3>Text area</h3>
+					<!--
+  Light:  <textarea class="au-text-input au-text-input--block">
+  Dark:   <textarea class="au-text-input au-text-input--block au-text-input--dark">
+-->
+
+					<label for="textarea">label text</label>
+					<textarea class="au-text-input au-text-input--block" name="textarea" id="textarea">
+  Value
+</textarea>
+					<h3>Select</h3>
+					<!--
+  Light:  <select class="au-select au-select--block">
+  Dark:   <select class="au-select au-select--block au-select--dark">
+-->
+
+					<label for="select1block">What option?</label>
+					<select id="select1block" class="au-select au-select--block">
+						<option value="">Please select</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+
 			</div>
 		</div>
 		</main>
